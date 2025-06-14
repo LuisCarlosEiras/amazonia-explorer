@@ -1,4 +1,6 @@
-# Amazônia Explorer
+# Amazônia Explorer - Português / English
+
+![IndianaJones](IndianaJones.png)
 
 ## Explorando Civilizações Ocultas sob o Dossel da Floresta
 
