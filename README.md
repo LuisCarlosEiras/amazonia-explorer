@@ -118,15 +118,15 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICE
 
 ---
 
-# Amazônia Explorer
+# Amazonia Explorer
 
 ## Exploring Hidden Civilizations beneath the Forest Canopy
 
-This repository contains the source code, data, and documentation for the Amazônia Explorer project, a digital exploration initiative of the Amazon Rainforest using technologies such as satellite imagery, LIDAR (Light Detection and Ranging), and artificial intelligence to discover and analyze archaeological sites hidden beneath the tree canopy.
+This repository contains the source code, data, and documentation for the Amazonia Explorer project, a digital exploration initiative of the Amazon Rainforest using technologies such as satellite imagery, LIDAR (Light Detection and Ranging), and artificial intelligence to discover and analyze archaeological sites hidden beneath the tree canopy.
 
 ## 🌎 [Visit the Website](https://crzhuhby.manus.space)
 
-The Amazônia Explorer website presents the results of digital exploration in an interactive and bilingual format (Portuguese and English).
+The Amazonia Explorer website presents the results of digital exploration in an interactive and bilingual format (Portuguese and English).
 
 ## 🔍 About the Project
 
@@ -134,12 +134,17 @@ With over 6,000,000 km² of extension spanning nine countries, the Amazon Rainfo
 
 This project uses artificial intelligence to explore open data — high-resolution satellite imagery, published LIDAR blocks, colonial diaries, indigenous oral maps, and archaeological survey articles — to discover secrets hidden beneath the tree canopy.
 
+## 🧠 OpenAI Models
+
+This project integrates the new OpenAI models (o3/o4 mini and GPT-4.1) for advanced archaeological data analysis, image interpretation, and historical source integration, meeting the requirements of the Kaggle challenge.
+
 ## 📊 Main Results
 
 - **Detection methodology** adapted for different types of structures (geoglyphs, circular villages, defensive moats)
 - **Cross-validation** with two independent methods for predicting geographical coordinates
 - **Historical synthesis** connecting the findings with legends such as the "Lost City of Z", Paititi, and El Dorado
 - **Innovative methodology** for large-scale archaeological discovery
+- **Generative AI analysis** using OpenAI models for advanced data interpretation
 
 ## 📁 Repository Structure
 
@@ -147,10 +152,13 @@ This project uses artificial intelligence to explore open data — high-resoluti
 amazonia-github/
 ├── site/                  # Website source code
 ├── scripts/               # Python scripts for analysis and processing
+│   └── amazonia_ai.py     # OpenAI models integration module
 ├── notebooks/             # Jupyter notebooks with analyses and demonstrations
 ├── data/                  # Data and results
 │   └── resultados/        # Analysis results
+│       └── ai_analysis/   # AI analysis results
 └── docs/                  # Additional documentation
+    └── amazonia_ai.md     # AI module documentation
 ```
 
 ## 🚀 Getting Started
@@ -159,6 +167,7 @@ amazonia-github/
 
 - Python 3.8 or higher
 - Node.js 14 or higher (for the website)
+- OpenAI API key (for AI features)
 
 ### Installation
 
@@ -175,6 +184,14 @@ cd site
 npm install
 ```
 
+### OpenAI API Configuration
+
+To use the AmazoniaAI module, create a `.env` file in the project root:
+
+```
+OPENAI_API_KEY=your_key_here
+```
+
 ### Running the Scripts
 
 ```bash
@@ -183,6 +200,9 @@ python scripts/deteccao_sitios.py
 
 # Coordinate prediction
 python scripts/previsao_coordenadas_final.py
+
+# AI analysis (requires OpenAI API key)
+python scripts/amazonia_ai.py
 ```
 
 ### Running the Website Locally
@@ -197,8 +217,8 @@ npm run dev
 For detailed documentation, see the [docs/](docs/) directory:
 
 - [Complete Documentation](docs/documentacao.md)
-- [Methodology](docs/metodologia.md)
-- [Results](docs/resultados.md)
+- [AmazoniaAI Module](docs/amazonia_ai.md)
+- [Execution Instructions](docs/EXECUTION.md)
 
 ## 🤝 Contributing
 
@@ -207,4 +227,7 @@ Contributions are welcome! Please read the [contribution guidelines](docs/CONTRI
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+
 
